@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FotoPro | Promoção: 10% OFF na Primeira Sessão</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        /* Estilos específicos para esta promoção */
+        .promo-header {
+            background: linear-gradient(135deg, #3498db, #2c3e50);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        
+        .promo-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .promo-tag {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .benefit-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .benefit-icon {
+            font-size: 2.5rem;
+            color: #3498db;
+            margin-bottom: 1rem;
+        }
+        
+        .comparison {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 3rem 0;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        
+        .comparison-table th, .comparison-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .comparison-table th {
+            background-color: #2c3e50;
+            color: white;
+        }
+        
+        .comparison-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .price-old {
+            text-decoration: line-through;
+            color: #e74c3c;
+        }
+        
+        .price-new {
+            font-weight: bold;
+            color: #27ae60;
+            font-size: 1.2rem;
+        }
+        
+        .how-to {
+            margin: 3rem 0;
+        }
+        
+        .steps {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .step {
+            flex: 1;
+            min-width: 200px;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
+        .step-number {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background: #3498db;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            margin-right: 0.5rem;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            .promo-header h1 {
+                font-size: 2rem;
+            }
+            
+            .steps {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>FotoPro</h1>
+        </header>
+        
+        <nav class="menu menu-left">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+        
+        <nav class="menu menu-right">
+            <ul>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        
+        <section class="hero">
+            <h2>Promoção Especial</h2>
+            <p>10% de desconto na sua primeira sessão fotográfica conosco!</p>
+        </section>
+        
+        <aside class="hero-img">
+            <img src="img/primeira-sessao-hero.jpg" alt="Primeira sessão fotográfica">
+        </aside>
+        
+        <main class="main">
+            <div class="promo-header">
+                <h1>10% DE DESCONTO</h1>
+                <div class="promo-tag">PRIMEIRA SESSÃO</div>
+                <p>Conheça nossos serviços com condições especiais para novos clientes</p>
+            </div>
+            
+            <h2>Por que fazer sua primeira sessão conosco?</h2>
+            <p>Queremos que você experimente a qualidade do nosso trabalho com um incentivo especial. Sua primeira sessão fotográfica conosco tem 10% de desconto em qualquer pacote!</p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎁</div>
+                    <h3>Desconto Imediato</h3>
+                    <p>10% de desconto aplicado diretamente no valor do pacote escolhido</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">📷</div>
+                    <h3>Sem Limitações</h3>
+                    <p>Válido para qualquer tipo de sessão: retrato, book profissional, gestante, família</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">💯</div>
+                    <h3>Qualidade Garantida</h3>
+                    <p>Mesmo padrão de qualidade de todas as nossas sessões fotográficas</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔄</div>
+                    <h3>Sem Compromisso</h3>
+                    <p>Não há obrigação de contratar outros serviços após esta sessão</p>
+                </div>
+            </div>
+            
+            <div class="comparison">
+                <h2>Compare os Valores</h2>
+                <p>Veja quanto você pode economizar na sua primeira sessão:</p>
+                
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Pacote</th>
+                            <th>Valor Normal</th>
+                            <th>Com Desconto</th>
+                            <th>Economia</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Básico (1h)</td>
+                            <td class="price-old">R$ 499</td>
+                            <td class="price-new">R$ 449</td>
+                            <td>R$ 50</td>
+                        </tr>
+                        <tr>
+                            <td>Standard (2h)</td>
+                            <td class="price-old">R$ 899</td>
+                            <td class="price-new">R$ 809</td>
+                            <td>R$ 90</td>
+                        </tr>
+                        <tr>
+                            <td>Premium (3h)</td>
+                            <td class="price-old">R$ 1.299</td>
+                            <td class="price-new">R$ 1.169</td>
+                            <td>R$ 130</td>
+                        </tr>
+                        <tr>
+                            <td>Luxo (4h)</td>
+                            <td class="price-old">R$ 1.599</td>
+                            <td class="price-new">R$ 1.439</td>
+                            <td>R$ 160</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="how-to">
+                <h2>Como aproveitar esta promoção?</h2>
+                <p>Siga estes simples passos para garantir seu desconto:</p>
+                
+                <div class="steps">
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        <h3>Escolha seu pacote</h3>
+                        <p>Selecione o tipo de sessão que melhor atende suas necessidades</p>
+                    </div>
+                    
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <h3>Agende sua sessão</h3>
+                        <p>Entre em contato informando que é sua primeira sessão</p>
+                    </div>
+                    
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <h3>Mencione a promoção</h3>
+                        <p>Informe o código "PRIMEIRA10" ao agendar</p>
+                    </div>
+                    
+                    <div class="step">
+                        <span class="step-number">4</span>
+                        <h3>Aproveite seu desconto</h3>
+                        <p>O desconto será aplicado no fechamento do pacote</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin: 3rem 0;">
+                <a href="contato.html?promo=primeira-sessao" class="cta-button">Quero meu desconto de 10%</a>
+            </div>
+        </main>
+        
+        <aside class="ext">
+            <h3>Promoção Relacionada</h3>
+            <p>Combine com o pacote de ensaios fotográficos e ganhe 5% de desconto adicional!</p>
+            <a href="ensaio-fotografico.html" class="button-link">Conhecer pacote</a>
+        </aside>
+        
+        <section class="banner">
+            <h2>Promoção válida apenas para primeiras sessões até o final deste mês!</h2>
+            <a href="contato.html?promo=primeira-sessao" class="cta-button">Agendar agora</a>
+        </section>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
