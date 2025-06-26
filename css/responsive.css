@@ -1,0 +1,80 @@
+/* Tablet */
+@media (max-width: 900px) {
+    .container {
+        grid-template-areas:
+            "header header header"
+            "menu-left menu-left menu-right"
+            "hero hero hero"
+            "hero-img hero-img hero-img"
+            "main main main"
+            "ext ext ext"
+            "banner banner banner";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto 1fr auto auto;
+    }
+    
+    .hero-img img {
+        max-height: 300px;
+    }
+    
+    .services {
+        flex-direction: column;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .menu ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .menu-left {
+        justify-content: center;
+    }
+    
+    .menu-right {
+        justify-content: center;
+    }
+    
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .hero-img img {
+        max-height: 200px;
+    }
+/* Ajustes para a seção de equipe na versão mobile */
+@media (max-width: 600px) {
+    .team-members {
+        grid-template-columns: 1fr; /* Uma coluna em mobile */
+        gap: 1.5rem;
+    }
+    
+    .member {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem 1rem;
+    }
+    
+    .member img {
+        width: 120px !important; /* Sobrescreve outros estilos se necessário */
+        height: 120px !important;
+        margin: 0 auto 1rem auto; /* Centraliza a imagem */
+        max-width: 100%; /* Garante que não ultrapasse a tela */
+    }
+    
+    .member h4, .member p {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+
+
+}

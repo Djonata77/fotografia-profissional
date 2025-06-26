@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FotoPro | Promoção Casamentos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        /* Estilos específicos para a página de promoção */
+        .promo-highlight {
+            background-color: #fffaf0;
+            border-left: 4px solid #ff6b6b;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .package {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid #eee;
+        }
+        
+        .package-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .package-title {
+            color: #d23369;
+            font-size: 1.5rem;
+        }
+        
+        .package-price {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #222;
+        }
+        
+        .package-price small {
+            font-size: 1rem;
+            color: #666;
+        }
+        
+        .package-features {
+            list-style-type: none;
+        }
+        
+        .package-features li {
+            padding: 0.5rem 0;
+            border-bottom: 1px dashed #eee;
+            display: flex;
+            align-items: center;
+        }
+        
+        .package-features li:before {
+            content: "✓";
+            color: #4caf50;
+            margin-right: 0.5rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #d23369, #ff6b6b);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1.5rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(210, 51, 105, 0.3);
+        }
+        
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .testimonial {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            margin-top: 1rem;
+        }
+        
+        .testimonial-author img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>FotoPro</h1>
+        </header>
+        
+        <nav class="menu menu-left">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+        
+        <nav class="menu menu-right">
+            <ul>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        
+        <section class="hero">
+            <h2>Promoção Especial para Casamentos</h2>
+            <p>Pacotes exclusivos para noivos neste mês!</p>
+        </section>
+        
+        <aside class="hero-img">
+            <img src="img/casamento-hero.jpg" alt="Noivos se beijando">
+        </aside>
+        
+        <main class="main">
+            <div class="promo-highlight">
+                <h2>✨ Oferta por tempo limitado!</h2>
+                <p>Este mês estamos com condições especiais para fotografar seu casamento. Reserve agora e garanta:</p>
+                <ul>
+                    <li>10% de desconto em todos os pacotes</li>
+                    <li>Sessão de ensaio pré-casamento gratuita</li>
+                    <li>Álbum de luxo incluso no pacote premium</li>
+                </ul>
+            </div>
+            
+            <h2>Nossos Pacotes para Casamentos</h2>
+            
+            <div class="package">
+                <div class="package-header">
+                    <h3 class="package-title">Pacote Básico</h3>
+                    <div class="package-price">R$ 2.499 <small>/evento</small></div>
+                </div>
+                <ul class="package-features">
+                    <li>8 horas de cobertura fotográfica</li>
+                    <li>1 fotógrafo profissional</li>
+                    <li>200+ fotos editadas em alta resolução</li>
+                    <li>Entrega em pen drive personalizado</li>
+                    <li>Galeria online por 6 meses</li>
+                </ul>
+                <a href="contato.html?package=basico" class="cta-button">Quero este pacote</a>
+            </div>
+            
+            <div class="package">
+                <div class="package-header">
+                    <h3 class="package-title">Pacote Completo</h3>
+                    <div class="package-price">R$ 3.999 <small>/evento</small></div>
+                </div>
+                <ul class="package-features">
+                    <li>12 horas de cobertura fotográfica</li>
+                    <li>2 fotógrafos profissionais</li>
+                    <li>400+ fotos editadas em alta resolução</li>
+                    <li>Sessão de ensaio pré-casamento (1h)</li>
+                    <li>Álbum fotográfico de 20 páginas</li>
+                    <li>Galeria online por 1 ano</li>
+                </ul>
+                <a href="contato.html?package=completo" class="cta-button">Quero este pacote</a>
+            </div>
+            
+            <div class="package">
+                <div class="package-header">
+                    <h3 class="package-title">Pacote Premium</h3>
+                    <div class="package-price">R$ 5.999 <small>/evento</small></div>
+                </div>
+                <ul class="package-features">
+                    <li>Cobertura completa do evento (até 14h)</li>
+                    <li>2 fotógrafos + 1 assistente</li>
+                    <li>600+ fotos editadas em alta resolução</li>
+                    <li>Sessão de ensaio pré-casamento (2h)</li>
+                    <li>Álbum de luxo com capa dura (30 páginas)</li>
+                    <li>2 quadros decorativos (30x45cm)</li>
+                    <li>Making of em vídeo (3-5min)</li>
+                    <li>Galeria online premium por 2 anos</li>
+                </ul>
+                <a href="contato.html?package=premium" class="cta-button">Quero este pacote</a>
+            </div>
+            
+            <h2>O que dizem os noivos que contrataram nossos serviços</h2>
+            
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>"As fotos do nosso casamento ficaram incríveis! Capturaram cada momento especial exatamente como imaginávamos. Super recomendo!"</p>
+                    <div class="testimonial-author">
+                        <img src="img/casal1.jpg" alt="Carla e Rodrigo">
+                        <div>
+                            <strong>Carla e Rodrigo</strong>
+                            <div>Casamento em Julho/2023</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <p>"O pacote premium valeu cada centavo! O álbum ficou lindo e as fotos foram tão naturais e cheias de emoção. Melhor investimento do casamento."</p>
+                    <div class="testimonial-author">
+                        <img src="img/casal2.jpg" alt="Fernanda e Marcos">
+                        <div>
+                            <strong>Fernanda e Marcos</strong>
+                            <div>Casamento em Setembro/2023</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <p>"Adoramos o trabalho da equipe! Foram discretos durante a cerimônia mas capturaram todos os momentos importantes. O ensaio pré-casamento também ajudou muito a nos soltar."</p>
+                    <div class="testimonial-author">
+                        <img src="img/casal3.jpg" alt="Patrícia e Lucas">
+                        <div>
+                            <strong>Patrícia e Lucas</strong>
+                            <div>Casamento em Novembro/2023</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <aside class="ext">
+            <h3>Condições Especiais</h3>
+            <p>Para casamentos fora da capital, consulte condições especiais para deslocamento!</p>
+            <a href="contato.html" class="cta-button" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Consultar valores</a>
+        </aside>
+        
+        <section class="banner">
+            <h2>Promoção válida apenas até o final deste mês!</h2>
+            <a href="contato.html" class="cta-button">Agendar reunião</a>
+        </section>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

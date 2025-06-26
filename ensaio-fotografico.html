@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FotoPro | Pacote de Ensaios Fotográficos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        /* Estilos específicos para a página de ensaios */
+        .package-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .package-hero {
+            background-color: #f8f9fa;
+            padding: 3rem 2rem;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        
+        .package-hero h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .package-hero p {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .package-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .package-info {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .package-highlights {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        
+        .price-tag {
+            font-size: 2rem;
+            color: #e74c3c;
+            margin: 1rem 0;
+            font-weight: bold;
+        }
+        
+        .price-tag small {
+            font-size: 1rem;
+            color: #7f8c8d;
+        }
+        
+        .features-list {
+            list-style-type: none;
+            margin: 1.5rem 0;
+        }
+        
+        .features-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px dashed #ecf0f1;
+            display: flex;
+            align-items: center;
+        }
+        
+        .features-list li:before {
+            content: "✓";
+            color: #2ecc71;
+            margin-right: 0.5rem;
+            font-weight: bold;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: all 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: #c0392b;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+        
+        .gallery-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        @media (max-width: 768px) {
+            .package-details {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>FotoPro</h1>
+        </header>
+        
+        <nav class="menu menu-left">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+        
+        <nav class="menu menu-right">
+            <ul>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        
+        <section class="hero">
+            <h2>Novo Pacote de Ensaios Fotográficos</h2>
+            <p>Expressão artística e autoconhecimento através da fotografia</p>
+        </section>
+        
+        <aside class="hero-img">
+            <img src="img/ensaio-hero.jpg" alt="Modelo em ensaio fotográfico">
+        </aside>
+        
+        <main class="main">
+            <div class="package-container">
+                <div class="package-hero">
+                    <h1>Pacote Complete Experience</h1>
+                    <p>Nosso novo pacote premium para ensaios fotográficos pessoais, profissionais e artísticos. Capturamos sua essência em imagens que contam sua história.</p>
+                </div>
+                
+                <div class="package-details">
+                    <div class="package-info">
+                        <h2>Detalhes do Pacote</h2>
+                        <div class="price-tag">R$ 1.299 <small>à vista ou 3x de R$ 450</small></div>
+                        <p>O pacote Complete Experience inclui tudo que você precisa para um ensaio fotográfico profissional e personalizado.</p>
+                        
+                        <ul class="features-list">
+                            <li>Sessão fotográfica de 2 horas em estúdio ou locação</li>
+                            <li>Direção de arte e styling básico</li>
+                            <li>50 fotos editadas em alta resolução</li>
+                            <li>5 fotos com tratamento profissional avançado</li>
+                            <li>Lookbook digital personalizado</li>
+                            <li>Guia de poses e expressões</li>
+                            <li>Sessão de consultoria pré-ensaio</li>
+                        </ul>
+                        
+                        <a href="contato.html?package=ensaio-complete" class="cta-button">Agendar meu ensaio</a>
+                    </div>
+                    
+                    <div class="package-highlights">
+                        <h3>Destaques do Pacote</h3>
+                        <div class="highlight-item">
+                            <h4>Para Todos os Estilos</h4>
+                            <p>Perfeito para ensaios pessoais, book profissional, gestante, família ou projetos criativos.</p>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <h4>Flexibilidade Total</h4>
+                            <p>Escolha entre nosso estúdio equipado ou locação de sua preferência.</p>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <h4>Resultado Garantido</h4>
+                            <p>Não gostou do resultado? Garantimos novas fotos sem custo adicional.</p>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <h4>Presente Especial</h4>
+                            <p>Incluímos 1 foto impressa em fine art (20x30cm) para presentear ou decorar.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h2 style="text-align: center; margin-bottom: 1.5rem;">Galeria de Ensaios Recentes</h2>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="img/ensaio1.jpg" alt="Ensaio pessoal">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/ensaio2.jpg" alt="Book profissional">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/ensaio3.jpg" alt="Ensaio criativo">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/ensaio4.jpg" alt="Ensaio de gestante">
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="contato.html?package=ensaio-complete" class="cta-button">Quero meu ensaio fotográfico</a>
+                </div>
+            </div>
+        </main>
+        
+        <aside class="ext">
+            <h3>Promoção Relacionada</h3>
+            <p>Combine com o pacote de casamento e ganhe 15% de desconto em ambos!</p>
+            <a href="promo-casamento.html" class="button-link">Ver promoção</a>
+        </aside>
+        
+        <section class="banner">
+            <h2>Pacote por tempo limitado com condições especiais!</h2>
+            <a href="contato.html?package=ensaio-complete" class="cta-button">Agendar agora</a>
+        </section>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
